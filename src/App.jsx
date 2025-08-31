@@ -1,27 +1,32 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './App.css';
-import LoginForm from './forms/LoginForm';
-import SignUpForm from './forms/SignUpForm';
-import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import NotFound from './pages/NotFound';
-import Careers from './pages/Careers';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import PageTitle from './components/PageTitle';
+import { useState } from "react";
+// import reactLogo from "./assets/react.svg";
+// import viteLogo from "/vite.svg";
+import "./App.css";
+import LoginForm from "./forms/LoginForm";
+import SignUpForm from "./forms/SignUpForm";
+import Navbar from "./components/Navbar/Navbar";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
+import Footer from "./components/Footer/Footer";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
+import Careers from "./pages/Careers";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import PageTitle from "./components/PageTitle";
 
-import React from 'react';
+import React from "react";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn] = useState(false);
   const location = useLocation();
 
   // Hide Navbar and Footer on /careers route
-  const hideNavAndFooter = location.pathname === '/careers';
+  const hideNavAndFooter = location.pathname === "/careers";
 
   return (
     <>
@@ -42,4 +47,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
