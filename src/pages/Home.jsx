@@ -7,7 +7,7 @@ const Home = () => {
         <input type="search" name="search" id="search" placeholder=" Search..." style={{width: "35rem", height: "2.0rem"}}/>
         <button className="btn btn-primary" onClick={() => {}} style={{height: "2.1rem", padding: "0 1rem"}}>Search</button>
       </div>
-      <div className="container-fluid">
+      {/* <div className="container-fluid">
         <div className="row">
           <div className="col-12 col-sm-6 col-md-4">
             <button>Button 1</button>
@@ -40,7 +40,7 @@ const Home = () => {
             <button>Button 10</button>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

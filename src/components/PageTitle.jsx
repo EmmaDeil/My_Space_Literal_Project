@@ -1,16 +1,3 @@
-// import React from 'react'
-
-// const PageTitle = ({ title }) => {
-//   return (
-//     <div>
-//       <h1>{title}</h1>
-//     </div>
-//   )
-// }
-
-// export default PageTitle;
-
-
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
