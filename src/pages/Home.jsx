@@ -1,4 +1,5 @@
 import React from "react";
+import Dashboard from "./Dashboard";
 
 const Home = () => {
   return (
@@ -7,6 +8,7 @@ const Home = () => {
         <input type="search" name="search" id="search" placeholder=" Search..." style={{width: "35rem", height: "2.0rem"}}/>
         <button className="btn btn-primary" onClick={() => {}} style={{height: "2.1rem", padding: "0 1rem"}}>Search</button>
       </div>
+      <Dashboard />
     </div>
   );
 };
