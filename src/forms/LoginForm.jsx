@@ -3,8 +3,8 @@ import React from 'react'
 const LoginForm = () => {
   return (
     <div>
-      <h2>Login</h2>
-      <form>
+      {/* <h2>Login</h2> */}
+      {/* <form>
         <div>
           <label htmlFor="email">Email:</label>
           <input type="email" id="email" name="email" required />
@@ -14,7 +14,7 @@ const LoginForm = () => {
           <input type="password" id="password" name="password" required />
         </div>
         <button type="submit">Login</button>
-      </form>
+      </form> */}
     </div>
   )
 }

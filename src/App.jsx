@@ -1,6 +1,4 @@
 import { useState } from "react";
-// import reactLogo from "./assets/react.svg";
-// import viteLogo from "/vite.svg";
 import "./App.css";
 import LoginForm from "./forms/LoginForm";
 import SignUpForm from "./forms/SignUpForm";
@@ -14,9 +12,6 @@ import {
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
-import Careers from "./pages/Careers";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
 import PageTitle from "./components/PageTitle";
 
 import React from "react";
@@ -37,9 +32,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<LoginForm />} />
         <Route path="/signup" element={<SignUpForm />} />
-        <Route path="/about" element={<PageTitle title="About Us" />} />
-        <Route path="/contact" element={<PageTitle title="Contact Us" />} />
-        <Route path="/careers" element={<Careers />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       {!hideNavAndFooter && <Footer />}
