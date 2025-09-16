@@ -2,3 +2,14 @@
   margin: 0 auto;
   padding: 0;
 }
+
+#search {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+#search:focus {
+  outline: none;
+  border-bottom: 2px solid #007bff;
+}
