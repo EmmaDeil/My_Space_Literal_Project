@@ -1,4 +1,5 @@
 import React from 'react'
+import LoginForm from '../forms/LoginForm';
 
 const Dashboard = () => {
    
@@ -10,6 +11,7 @@ const Dashboard = () => {
       context: "Dashboard",
       icon : "dashboard-icon"
    };
+    
 
   return (
     <div>
@@ -21,6 +23,7 @@ const Dashboard = () => {
       <div>{box.category}</div>
       <div>{box.type}</div>
       <div>{box.context}</div>
+      <LoginForm />
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "./App.css";
 import LoginForm from "./forms/LoginForm";
 import SignUpForm from "./forms/SignUpForm";
@@ -17,7 +17,7 @@ import PageTitle from "./components/PageTitle";
 import React from "react";
 
 function App() {
-  const [isLoggedIn] = useState(false);
+  // const [isLoggedIn] = useState(false);
   const location = useLocation();
 
   // Hide Navbar and Footer on /careers route
@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       <PageTitle title="Welcome to SpaceLiteral" />
-      {!isLoggedIn ? <LoginForm /> : <SignUpForm />}
+      {/* {!isLoggedIn ? <LoginForm /> : <SignUpForm />} */}
       {!hideNavAndFooter && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
