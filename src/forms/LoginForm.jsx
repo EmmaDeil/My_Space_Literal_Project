@@ -25,6 +25,7 @@ const LoginForm = () => {
   return (
     <div>
       <div className="logbox">
+        {/* <AuthForm /> */}
         <form
           className="justify-content-center align-items-center d-flex flex-column gap-3"
           action=""
@@ -63,10 +64,15 @@ const LoginForm = () => {
             Login
           </button>
           <div className="mb-3">
-            <a href="/signup" className="btn btn-link">
+            <button
+              type="button"
+              className="btn btn-link"
+              onClick={() => navigate("/signupform")}
+              style={{ padding: 0, border: "none", background: "none" }}
+            >
               Don't have an account? Sign Up
-            </a>
-            <a href="/forgot-password" className="btn btn-link">
+            </button>
+            <a href="/forgot-password" className="btn btn-link" onClick={() => navigate("/forgot-password")}>
               Forgot Password?
             </a>
           </div>
@@ -75,6 +81,7 @@ const LoginForm = () => {
           </div>
           <div className="social-login d-flex gap-3">
             <a href="/login/google" className="btn btn-outline-secondary" style={{width: "20rem"}}>
+              <i className="bi bi-google" style={{ fontSize: "1.0rem", marginRight: "5px", color: "#db4437" }}></i>
               Login with Google
             </a>
           </div>

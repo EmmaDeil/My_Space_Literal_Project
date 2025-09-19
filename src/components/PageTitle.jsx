@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-function PageTitle({ defaultTitle = "My Website" }) {
+function PageTitle({ defaultTitle = "SpaceLiteral" }) {
   const location = useLocation();
 
   useEffect(() => {

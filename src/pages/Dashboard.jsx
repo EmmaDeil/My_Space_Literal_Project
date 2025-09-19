@@ -1,5 +1,5 @@
 import React from 'react'
-import LoginForm from '../forms/LoginForm';
+import AuthForm from '../forms/AuthForm';
 
 const Dashboard = () => {
    
@@ -23,7 +23,7 @@ const Dashboard = () => {
       <div>{box.category}</div>
       <div>{box.type}</div>
       <div>{box.context}</div>
-      <LoginForm />
+      <AuthForm />
     </div>
   )
 }

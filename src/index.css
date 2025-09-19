@@ -9,7 +9,7 @@
 }
 
 #email,
-#password {
+#password,#username, #confirm-password {
   width: 100%;
   padding: 8px;
   margin: 8px 0;
@@ -29,9 +29,15 @@
   padding: 0.5rem 2rem;
 }
 
-#loginbtn:hover {
+#loginbtn:hover, #signupbtn:hover {
   background-color: #0056b3;
   cursor: pointer;
+}
+
+#signupbtn {
+  width: 12rem;
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
 }
 
 .or-divider {
