@@ -15,6 +15,7 @@ import NotFound from "./pages/NotFound";
 import PageTitle from "./components/PageTitle";
 
 import React from "react";
+import InteractiveForm from "./pages/InteractiveForm";
 
 function App() {
   // const [isLoggedIn] = useState(false);
@@ -35,6 +36,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       {!hideNavAndFooter && <Footer />}
+      {/* <InteractiveForm /> */}
     </>
   );
 }

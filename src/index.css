@@ -1,23 +1,61 @@
-#email, #password {
-   /* width: 100%; */
-   padding: 8px;
-   margin: 8px 0;
-   box-sizing: border-box;
-   border: none;
-   border-bottom: 1px solid #ccc;
+.logbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
 }
 
-#email, #password:focus {
+#email,
+#password {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+#email,
+#password:focus {
   outline: none;
   border-bottom: 2px solid #007bff;
 }
 
 #loginbtn {
-   width: 10rem;
-   padding: 0.5rem 2rem;
+  width: 12rem;
+  padding: 0.5rem 2rem;
 }
 
 #loginbtn:hover {
-   background-color: #0056b3;
-   cursor: pointer;
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+.or-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 25px 0;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.or-divider::before,
+.or-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ddd;
+}
+
+.or-divider::before {
+  margin-right: 15px;
+}
+
+.or-divider::after {
+  margin-left: 15px;
 }
