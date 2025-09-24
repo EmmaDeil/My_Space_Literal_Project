@@ -4,7 +4,7 @@ import AuthForm from '../forms/AuthForm';
 const Dashboard = () => {
    
    const box = {
-      name: "Dashboard",
+      name: ["Dashboard", "User Panel", "Control Center"],
       description: "User dashboard page",
       category: "User",
       type: "Page",
@@ -14,16 +14,14 @@ const Dashboard = () => {
     
 
   return (
-    <div>
-      <h2>Dashboard</h2>
-      <p>Welcome to your dashboard!</p>
-      <div className='border '>{box.name}</div>
-      <div className='border'>{box.icon}</div>
-      <div>{box.description}</div>
-      <div>{box.category}</div>
-      <div>{box.type}</div>
-      <div>{box.context}</div>
-      <AuthForm />
+    <div className='d-flex flex-row-column gap-3 align-items-start' style={{padding: "2rem"}}>
+      <div className='border' style={{ padding: "1rem", borderRadius: "0.5rem", width: "10rem", height: "10rem" }}>{box.name[1]}
+         <p style={{fontSize: "0.8rem", color: "gray"}}>{box.description}</p>
+         <p style={{fontSize: "0.8rem", color: "gray"}}>{box.category}</p>
+         <p style={{fontSize: "0.8rem", color: "gray"}}>{box.type}</p>
+      </div>
+      
+      {/* <AuthForm /> */}
     </div>
   )
 }

@@ -1,12 +1,12 @@
 import React from 'react'
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import LoginForm from './LoginForm';
 import SignForm from './SignUpForm';
 
 const AuthForm = () => {
    const [isLogin, setIsLogin] = useState(true);
-   const navigate = useNavigate();
+   // const navigate = useNavigate();
 
 return (
    <div>
