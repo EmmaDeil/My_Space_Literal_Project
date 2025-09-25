@@ -68,6 +68,20 @@ const DynamicGrid = ({ items = [] }) => {
             </div>
           </div>
         );
+      case "custom":
+         return (
+            <div className="col-6 col-sm-3" key={item.id || Math.random()}>
+               <div className="card h-100">
+                  <div className="card-body">
+                     <h5 className="card-title">{item.title || "Default"}</h5>
+                     <p className="card-text">{item.content || "Default content"}</p>
+                     <button className="btn btn-sm btn-primary">
+                        {item.buttonText || "Action"}
+                     </button>
+                  </div>
+               </div>
+            </div>
+         );
       default:
         return (
           <div className="col-6 col-sm-3" key={item.id || Math.random()}>
